@@ -6,6 +6,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        
 
        
     </head>
@@ -16,6 +17,7 @@
             @foreach($posts as $post)
                 <div class='posts'>
                     <a href="/posts/{{ $post->id}}"><h2 class='title'>{{ $post->title }}</h2></a>
+                    <a href="">{{ $post->category->name }}</a>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
